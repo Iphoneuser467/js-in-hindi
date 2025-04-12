@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAI AUR CODE</title>
+</head>
+<body style="background-color:orange;color:white">
+
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+
+<script>
+//    function addLanguage(langName)
+//    {
+   
+//    const li=document.createElement('li');
+//    li.innerHTML=`${langName}`
+//    document.querySelector('.language').appendChild(li)
+// }
+
+//    function addMore(languages){
+//     const li=document.createElement('li');
+//     li.innerHTML=`${languages}`
+//     document.querySelector('.language')
+//     .appendChild(li)
+//    }
+//    addMore('abcd')
+//    addMore("basket")
+
+
+
+// addLanguage('java')
+// addLanguage("python")
+
+
+// function addmoreNAMES(names){
+
+//     const li=document.createElement('li');
+//     li.innerHTML=`${names}`
+//     document.querySelector('.language').appendChild(li)
+// }
+// addmoreNAMES('ruby')
+// addmoreNAMES('c++')
+// addmoreNAMES('rust')
+
+
+function adding(langchang){
+    const li=document.createElement('li');
+    li.innerHTML=`${langchang}`
+    document.querySelector('.language').appendChild(li)
+
+}
+adding('c')
+adding('sql')
+
+// edit any list option
+
+const SecondLang= document.querySelector("li:nth-child(2)")
+const newLang=document.createElement("li")
+newLang.textContent="mojo"
+SecondLang.replaceWith(newLang)
+
+
+// edit
+const prev=document.querySelector("li:nth-child(3)")
+const next=document.createElement('li')
+next.textContent='manjulika'
+prev.replaceWith(next)
+
+
+</script>
+
+</html>
