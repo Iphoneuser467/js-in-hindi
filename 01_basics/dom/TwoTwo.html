@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello this is prakash</h1>
+    <br>
+    <br>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+
+
+const startOn=document.querySelector("#start")
+const endOff=document.querySelector("#stop")
+
+let intervalId=null;
+
+
+startOn.addEventListener('click',function(){
+if(intervalId!==null)
+{
+    console.log("already running")
+    return
+}
+    intervalId=setInterval(function(){
+    console.log("started your new time")
+    console.log(Date.now())
+},2000)
+})
+
+endOff.addEventListener('click',function(){
+    
+       if(intervalId!==null)
+       {
+    clearInterval(intervalId)
+    intervalId=null
+    console.log("STOPPED HE HE HE HE")
+}})
+// endOff.addEventListener('click',function()
+// {
+   
+// })
+</script>
+
+
+</html>
